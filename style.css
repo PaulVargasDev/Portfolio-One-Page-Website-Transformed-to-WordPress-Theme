@@ -1,0 +1,352 @@
+/*
+Theme Name: Vargasdev
+Theme URI: http://wpmagma.com
+Author: Pablo (Paul) Vargas
+Author URI: http://wpmagma.com
+Description: Vargasdev is a theme for Paul Vargas.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: vargasdev
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* CSS CODE */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    color: #000080;
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    font-weight: normal;
+}
+
+/* HEADER */
+
+#particles-js {
+    height: 100vh;
+    background-color: rgb(0,0,128);
+    border-bottom: #ff4500 solid 2px;
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    margin: auto;
+}
+
+#title h1 {
+    color: #ffffff;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+#title p {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Scrolling Down Button */
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 5%;
+  /* /* left: 50%; */
+  right: 48.5%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+/* END of Scrolling Down Button */
+/* END of Header */
+
+/* START: MAIN INFO SECTION */
+
+#maininfo h1 {
+    text-align: center;
+    color: #000080;
+    font-size: 2em;
+    padding: 1em 1em 0.5em;
+}
+
+/* START: MAIN NAV MENU */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #000080;
+    border-bottom: #ff4500 solid 2px;
+    height: auto;
+}
+
+/* #logo {
+    padding: 2px;
+    margin-top: 2px;
+} */
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+#navbar ul li a:hover {
+    color: #ff4500;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.sticky + #aboutmesection {
+    padding-top: 60px;
+  }
+
+/* END MAIN NAV MENU */
+
+/* START: About Me Section */
+
+#aboutmesection {
+    background-color: #ffffff;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about #imgabout {
+    padding: 5px;
+    margin: 2%; 
+}
+
+#about #textabout {
+    padding: 0.5em; 
+    margin: 2%;
+    border: #000080 double;
+}
+
+#about #values {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#about #values figure {
+    padding: 10px;
+    margin: 10px;
+}
+
+#about #values figcaption {
+    text-align: center;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* END About Me Section */
+
+/* START: Skills Section */
+
+#skillssection {
+    padding-top: 40px;
+    background-color: #f5f5f5;
+}
+
+#skillssection p {
+    text-align: center;
+    margin: 10px;
+}
+
+#skillssection figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* END Skills Section */
+
+/* START: Projects & Open Source Section */
+
+ #projectssection {
+    padding-top: 40px;
+    background-color: #FFF;    
+}
+
+#opensourcesection {
+    background-color: #f5f5f5;    
+    border-bottom: #ff4500 solid 2px;
+}
+
+#opensourcesection img {
+    border: #ff4500 1px solid;
+}
+
+#projectssection, #opensourcesection p {
+    text-align: center;
+    margin: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio figure {
+    padding: 20px;
+    margin: 20px;
+}
+
+.portfolio figcaption {
+    text-align: center;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* END Projects & Open Source Section */ 
+
+/* START: Contact Section */
+
+#contact {
+    background-color: #fff;
+    border-bottom: #ff4500 solid 2px;
+}
+
+#contactbutton {
+    text-align: center;
+}
+.button {
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;    
+}
+
+.button:hover {
+    background-color: #000088;
+}
+
+#social {
+    text-align: center;
+}
+ #social img {
+     padding: 10px;
+     margin: 10px;
+     max-width: 3em;
+     max-height: 3em;
+ }
+
+ /* END Contact Section */
+
+/* END MAIN INFO SECTION */
+
+ /* START: FOOTER */
+
+ footer {
+     background-color: #000088;
+ }
+
+ #small {
+     text-align: center;
+     color: #ff4500;
+ }
+
+ #small em {
+     text-decoration: underline;
+ }
